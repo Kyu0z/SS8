@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+  background-color: #fff !important;
+}
+
+.ant-layout {
+  background-color: #fff !important;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8c8c8c #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+/* Badge */
+.ant-badge-count {
+  border-radius: 3px !important;
+  width: 38px !important;
+  height: 40px !important;
+  background-color: #fc7d72 !important;
+}
+
+.ant-scroll-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem !important;
+}
+
+/* Popover */
+
+.popover .content {
+  display: none;
+  position: relative;
+}
+
+.popover:hover .content {
+  position: absolute;
+  display: block;
+  color: #fff;
+  border-radius: 18px 18px 18px 0px;
+  width: 270px;
+  background-color: #fc7d72;
+  top: -93px;
+  right: -218px;
+  z-index: 999;
+  padding: 0.8rem;
+  transition: all 0.3s linear;
+}
+
+.content p {
+  padding: 0.5rem 0;
+}
+
+/* sidebar */
+
+.ant-menu-item {
+  display: flex;
+  align-items: center;
+  height: 64px !important;
+  margin: 1.5rem 0;
+}
+
+.ant-menu-item:nth-child(1) {
+  margin-bottom: 1.5rem;
+}
